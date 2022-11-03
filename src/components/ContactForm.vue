@@ -87,6 +87,7 @@ export default {
       email: yup
         .string()
         .email("E-mail không đúng.")
+        .required("Email không được để trống")
         .max(50, "E-mail tối đa 50 ký tự."),
       address: yup.string().max(100, "Địa chỉ tối đa 100 ký tự."),
       phone: yup
