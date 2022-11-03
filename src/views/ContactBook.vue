@@ -28,21 +28,19 @@
     <div class="mt-3 col-md-6">
       <div v-if="activeContact">
         <ContactCard :contact="activeContact" />
-        <!-- <router-link :to="{
+        <router-link :to="{
         name: 'contact.edit',
         params: { id: activeContact._id },
         }">
           <span class="mt-2 badge badge-warning">
             <i class="fas fa-edit"></i> Hiệu chỉnh</span>
-        </router-link> -->
+        </router-link> 
         <!-- <router-link @click="refreshList" :to="{
         name: 'contactbook',
         }">
         <span class="mt-2 badge badge-warning">
           <i class="fa-solid fa-trash-can"></i> Xóa</span>
         </router-link> -->
-        
-
       </div>
     </div>
   </div>
